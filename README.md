@@ -31,7 +31,7 @@ var app = angular.module('friendsList', []);
 ```
 * It's really important to note the syntax of what you just copied. We're telling the browser to create a new angular module called 'friendsList' and save that angular module into a variable called app. Take note on the empty array we're passing as the second parameter to angular.module, this empty array tells Angular to create a new module rather than just getting an old module that has already been created. It's crucial to understand that in our 'app.js' file we're creating a new module (passing in the empty []) because our 'app.js' file is our hub as we mentioned earlier. In other files instead of passing in both the name of the module (friendsList) and an empty array, we'll just pass in the name of the module like so, 
 ```javascript
-var app = angular.module('friendsList');
+angular.module('friendsList');
 ```
 Now, instead of creating a friendsList module, we're just getting one that has already been created. You'll see this in action in the next step.
 * The last step that will bite you at least a few times during DevMountain is whenever you create a JavaScript file, you always have to include that in your HTML page. Go over to index.html and include 'js/app.js' as a script right below where you included Angular. (The reason it's 'js/app.js' is because we made a folder called 'js' and app.js is inside that folder.
